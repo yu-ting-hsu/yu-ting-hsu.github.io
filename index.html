@@ -274,100 +274,127 @@
             height: 4.2vw;
           }
 
+          #mobil_navbar{
+            position: fixed;
+            top: 0;
+            height: 10vw;
+            width: 100vw;
+            background-image: url('img/mobil_navbar.png');
+            background-size: cover;
+            display: none;
+          }
+
+           @media(max-width: 480px){
+             #navbar{
+             display: none;
+            }
+            #mobil_navbar{
+              display: block;
+            }
+          }
+
 
 
         </style>
 
         <body>
-         <div id="main">
-          <img src="img/bg.png" alt="" id="img_all">
+          <div id="navbar">
+            <a href="#menu"><img src="img/navbar1.png" alt="" id="navbar1"></a>
+            <a href="#phone"><img src="img/navbar2.png" alt="" id="navbar2"></a> 
+          </div>
 
-          <div id="manu_1" data-aos="fade-up-right" data-aos-duration="2000">
-           <img src="img/a.png" alt="">
+          <div id="mobil_navbar">
+            <a href="#menu"><img src="img/navbar1.png" alt="" id="navbar1"></a>
+            <a href="#phone"><img src="img/navbar2.png" alt="" id="navbar2"></a> 
+          </div>
+
+          <div id="main">
+            <img src="img/bg.png" alt="" id="img_all">
+
+            <div id="manu_1" data-aos="fade-up-right" data-aos-duration="2000">
+             <img src="img/a.png" alt="">
+           </div>
+
+           <div id="manu_2" data-aos="fade-up-left" data-aos-duration="2000">
+             <img src="img/b.png" alt=""> 
+           </div>
+
+           <div id="manu_3" data-aos="fade-up-right" data-aos-duration="2000">
+             <img src="img/c.png" alt=""> 
+           </div>
+
+           <div id="manu_4" data-aos="fade-up-left" data-aos-duration="2000">
+             <img src="img/d.png" alt=""> 
+           </div>
+
+           <div id="manu_5" data-aos="fade-up-right" data-aos-duration="2000">
+             <img src="img/e.png" alt=""> 
+           </div>
+
+           <div id="manu_6" data-aos="fade-up-left" data-aos-duration="2000">
+             <img src="img/f.png" alt=""> 
+           </div>
+
+           <a href="#menu5"><div id="dessert">
+             <img src="img/meal/dessert.png" alt="">
+           </div></a>
+
+           <a href="#menu6"><div id="toast">
+             <img src="img/meal/TOAST.png" alt="">
+           </div></a>
+
+           <a href="#menu4"><div id="milk">
+             <img src="img/meal/MILK.png" alt="">
+           </div></a>
+
+           <a href="#menu1"><div id="latte">
+             <img src="img/meal/LATTE.png" alt="">
+           </div></a>
+
+           <a href="#menu3"><div id="tea">
+             <img src="img/meal/tea.png" alt="">
+           </div></a>
+
+           <a href="#menu2"><div id="coffee">
+             <img src="img/meal/DARK_COFFEE.png" alt="">
+           </div></a>
+
+           <div id="menu"></div>
+
+           <div id="phone"></div>
+
+           <div id="menu1"></div>
+
+           <div id="menu2"></div>
+
+           <div id="menu3"></div>
+
+           <div id="menu4"></div>
+
+           <div id="menu5"></div>
+
+           <div id="menu6"></div>
+
          </div>
 
-         <div id="manu_2" data-aos="fade-up-left" data-aos-duration="2000">
-           <img src="img/b.png" alt=""> 
-         </div>
-
-         <div id="manu_3" data-aos="fade-up-right" data-aos-duration="2000">
-           <img src="img/c.png" alt=""> 
-         </div>
-
-         <div id="manu_4" data-aos="fade-up-left" data-aos-duration="2000">
-           <img src="img/d.png" alt=""> 
-         </div>
-
-         <div id="manu_5" data-aos="fade-up-right" data-aos-duration="2000">
-           <img src="img/e.png" alt=""> 
-         </div>
-
-         <div id="manu_6" data-aos="fade-up-left" data-aos-duration="2000">
-           <img src="img/f.png" alt=""> 
-         </div>
-
-         <a href="#menu5"><div id="dessert">
-           <img src="img/meal/dessert.png" alt="">
-         </div></a>
-
-         <a href="#menu6"><div id="toast">
-           <img src="img/meal/TOAST.png" alt="">
-         </div></a>
-
-         <a href="#menu4"><div id="milk">
-           <img src="img/meal/MILK.png" alt="">
-         </div></a>
-
-         <a href="#menu1"><div id="latte">
-           <img src="img/meal/LATTE.png" alt="">
-         </div></a>
-
-         <a href="#menu3"><div id="tea">
-           <img src="img/meal/tea.png" alt="">
-         </div></a>
-
-         <a href="#menu2"><div id="coffee">
-           <img src="img/meal/DARK_COFFEE.png" alt="">
-         </div></a>
-
-         <div id="menu"></div>
-
-         <div id="phone"></div>
-
-         <div id="menu1"></div>
-
-         <div id="menu2"></div>
-
-         <div id="menu3"></div>
-
-         <div id="menu4"></div>
-
-         <div id="menu5"></div>
-
-         <div id="menu6"></div>
-
-       </div>
-
-       <div id="navbar">
-        <a href="#menu"><img src="img/navbar1.png" alt="" id="navbar1"></a>
-        <a href="#phone"><img src="img/navbar2.png" alt="" id="navbar2"></a> 
-      </div>
 
 
 
 
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 
-      <script>
-        AOS.init();
-      </script>
-    </body>
+         <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-    </html>
+
+         <script>
+          AOS.init();
+        </script>
+      </body>
+
+      </html>
