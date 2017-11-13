@@ -1,89 +1,356 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Hello, world!</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <!doctype html>
+          <html lang="en">
+          <head>
+          	<title>Hello, world!</title>
+          	<!-- Required meta tags -->
+          	<meta charset="utf-8">
+          	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+          	<!-- Bootstrap CSS -->
+          	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+          	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-  </head>
+          </head>
+          <style>
+          #main{
+          	position: relative;
+          }
 
-  <style>
+          #img_all{
+          	width: 100vw;
+          }
 
-    #main{
-      position: relative;
-    }
+          #manu_1{
+          	position: absolute;
+          	top: 70vw;
+          	left: 22vw;
+          }
 
-    #menu_1{
-      position: absolute;
-      top: 67vw;
-      left: 25vw;
-    }
+          #manu_1 img{
+          	width: 45vw;
+          }
 
-    #menu_1 img{
-      width: 50vw;
-    }
+          #manu_2{
+          	position: absolute;
+          	top: 110vw;
+          	left: 38vw;
+          }
 
-    #menu_2{
-      position: absolute;
-      top: 109vw;
-      left: 36vw;
-    }
+          #manu_2 img{
+          	width: 57vw;
+          }
 
-    #menu_2 img{
-      width: 55vw;
-    }
-   
-    .bg_image{
-      width: 100%;
-    }
+          #manu_3{
+          	position: absolute;
+          	top: 147vw;
+          	left: 22vw;
+          }
 
-    .cus_navbar{
-      position: fixed;
-      top: 0;
-      left: 30px;
-      width: 15%;
-    }
+          #manu_3 img{
+          	width: 57vw;
+          }
+          
+          #manu_4{
+          	position: absolute;
+          	top: 188vw;
+          	left: 38vw;
+          }
 
-    .cus_navbar_img{
-      width: 100%;
-    }
-  </style>
+          #manu_4 img{
+          	width: 56vw;
+          }
 
-  <body>
+          #manu_5{
+          	position: absolute;
+          	top: 233vw;
+          	left: 22vw;
+          }
 
+          #manu_5 img{
+          	width: 56vw;
+          }
 
-    <div id="main" class="container-fluid">
-      <img class="bg_image" src="img/All.png" alt="">
+          #manu_6{
+          	position: absolute;
+          	top: 270vw;
+          	left: 31vw;
+          }
 
-      <div id="menu_1" data-aos="fade-right" data-aos-duration="2000">
-        <img src="img/a.png" alt="">
-      </div>
+          #manu_6 img{
+          	width: 63vw;
+          }
 
-      <div id="menu_2" data-aos="fade-left" data-aos-duration="2000">
-        <img src="img/b.png" alt="">
-      </div>
-    </div>
+          #dessert{
+          	position: absolute;
+          	top: 38vw;
+          	left: 71.5vw;
+          } 
+
+          #dessert img{
+          	width: 12.5vw;
+          }
+
+          #dessert:hover{
+          	top: 38.5vw;
+          	left: 72vw;
+          } 
+
+          #dessert img:hover{
+          	width: 13vw;
+          }
+
+          #toast{
+          	position: absolute;
+          	top: 29vw;
+          	left: 72vw;
+          } 
+
+          #toast img{
+          	width: 12.5vw;
+          }
+
+          #toast:hover{
+          	top: 28vw;
+          	left: 71vw;
+          } 
+
+          #toast img:hover{
+          	width: 13.5vw;
+          }
+
+          #milk{
+          	position: absolute;
+          	top: 35.5vw;
+          	left: 81.5vw;
+          }
+
+          #milk img{
+          	width: 11vw;
+          }
+
+          #milk:hover{
+          	top: 34.5vw;
+          	left: 80.5vw;
+          }
+
+          #milk img:hover{
+          	width: 12vw;
+          }
+
+          #latte{
+          	position: absolute;
+          	top: 31vw;
+          	left: 55.5vw;
+          }
+
+          #latte img{
+          	width: 11vw;
+          }
+
+          #latte:hover{
+          	top: 30vw;
+          	left: 54.5vw;
+          }
+
+          #latte img:hover{
+          	width: 12vw;
+          }
+
+          #tea{
+          	position: absolute;
+          	top: 35.2vw;
+          	left: 45.3vw;
+          }
+
+          #tea img{
+          	width: 16vw;
+          }
+
+          #tea:hover{
+          	top: 34.2vw;
+          	left: 44.3vw;
+          }
+
+          #tea img:hover{
+          	width: 17vw;
+          }
+
+          #coffee{
+          	position: absolute;
+          	top: 40.5vw;
+          	left: 59vw;
+          }
+
+          #coffee img{
+          	width: 11.5vw;
+          }
+
+          #coffee:hover{
+          	top: 39.5vw;
+          	left: 58vw;
+          }
+
+          #coffee img:hover{
+          	width: 12.5vw;
+          }
+
+          #navbar{
+          	position: fixed;
+          	top: 0;
+          	left: 2vw;
+          	width: 20vw;
+          	height: 27vw;
+          	background-image: url('img/navbar_3.png');
+          	background-size: cover;
+          	font-size: 4vw;
+          	font-weight: bolder;
+          	font-family: "MS Serif", "New York", serif;
+          }
+
+          #menu{
+          	position: absolute;
+          	top: 0;
+          	left: 30vw;
+          }
+
+          #menu1{
+          	position: absolute;
+          	top: 50vw;
+          	left: 30vw;
+          }
+
+          #menu2{
+          	position: absolute;
+          	top: 85vw;
+          	left: 30vw;
+          }
+
+           #menu3{
+          	position: absolute;
+          	top: 120vw;
+          	left: 30vw;
+          }
+
+          #menu4{
+          	position: absolute;
+          	top: 165vw;
+          	left: 30vw;
+          }
+
+           #menu5{
+          	position: absolute;
+          	top: 210vw;
+          	left: 30vw;
+          }
+
+           #menu6{
+          	position: absolute;
+          	top: 245vw;
+          	left: 30vw;
+          }
+
+          #phone{
+          	position: absolute;
+          	bottom: 0;
+          	left: 30vw;
+          }
+
     
-    <div class="cus_navbar">
-      <img class="cus_navbar_img" src="img/navbar.png" alt="">
-    </div>
+          
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      </style>
 
-    <script>
-      AOS.init();
-    </script>
+      <body>
+      	<div id="main">
+      		<img src="img/All_2.png" alt="" id="img_all">
 
-  </body>
-</html>
+      		<div id="manu_1" data-aos="fade-up-right" data-aos-duration="2000">
+      			<img src="img/a.png" alt="">
+      		</div>
+
+      		<div id="manu_2" data-aos="fade-up-left" data-aos-duration="2000">
+      			<img src="img/b.png" alt=""> 
+      		</div>
+
+      		<div id="manu_3" data-aos="fade-up-right" data-aos-duration="2000">
+      			<img src="img/c.png" alt=""> 
+      		</div>
+
+      		<div id="manu_4" data-aos="fade-up-left" data-aos-duration="2000">
+      			<img src="img/d.png" alt=""> 
+      		</div>
+
+      		<div id="manu_5" data-aos="fade-up-right" data-aos-duration="2000">
+      			<img src="img/e.png" alt=""> 
+      		</div>
+
+      		<div id="manu_6" data-aos="fade-up-left" data-aos-duration="2000">
+      			<img src="img/f.png" alt=""> 
+      		</div>
+
+      		<a href="#menu5"><div id="dessert">
+      			<img src="img/meal/dessert.png" alt="">
+      		</div></a>
+
+      		<a href="#menu6"><div id="toast">
+      			<img src="img/meal/TOAST.png" alt="">
+      		</div></a>
+
+      		<a href="#menu4"><div id="milk">
+      			<img src="img/meal/MILK.png" alt="">
+      		</div></a>
+
+      		<a href="#menu1"><div id="latte">
+      			<img src="img/meal/LATTE.png" alt="">
+      		</div></a>
+
+      		<a href="#menu3"><div id="tea">
+      			<img src="img/meal/tea.png" alt="">
+      		</div></a>
+
+      		<a href="#menu2"><div id="coffee">
+      			<img src="img/meal/DARK_COFFEE.png" alt="">
+      		</div></a>
+
+      		<div id="menu"></div>
+
+      		<div id="phone"></div>
+
+      		<div id="menu1"></div>
+
+      		<div id="menu2"></div>
+
+      		<div id="menu3"></div>
+
+      		<div id="menu4"></div>
+
+      		<div id="menu5"></div>
+
+      		<div id="menu6"></div>
+
+      	</div>
+
+      	<div id="navbar">
+      		<a href="#menu"><div>菜單</div></a>
+      		<a href="#phone"><div>聯絡我們</div></a>
+      	</div>
+
+
+
+
+
+      	<!-- Optional JavaScript -->
+      	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+
+      	<script>
+      		AOS.init();
+      	</script>
+      </body>
+
+      </html>
