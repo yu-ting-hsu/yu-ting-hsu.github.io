@@ -274,11 +274,38 @@
             height: 4.2vw;
           }
 
+		  #mobile_navbar{
+			display: none;
+		  }
 
+
+		
+		  @media (max-width:480px){
+			#navbar{
+				display: none;
+			}
+
+			#mobile_navbar{
+				display: block;
+		  	}
+		  }
 
         </style>
 
         <body>
+
+
+		<div id="navbar">
+			<a href="#menu"><img src="img/navbar1.png" alt="" id="navbar1"></a>
+			<a href="#phone"><img src="img/navbar2.png" alt="" id="navbar2"></a> 
+		</div>
+
+		<!-- mobile navbar -->
+		<div id="mobile_navbar">
+			123
+		</div>
+
+
          <div id="main">
           <img src="img/bg.png" alt="" id="img_all">
 
@@ -347,15 +374,6 @@
          <div id="menu6"></div>
 
        </div>
-
-       <div id="navbar">
-        <a href="#menu"><img src="img/navbar1.png" alt="" id="navbar1"></a>
-        <a href="#phone"><img src="img/navbar2.png" alt="" id="navbar2"></a> 
-      </div>
-
-
-
-
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
