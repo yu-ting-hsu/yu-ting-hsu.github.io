@@ -13,12 +13,17 @@
 
           </head>
           <style>
+
+			body{
+				overflow-x: hidden;
+			}
+
           #main{
           	position: relative;
           }
 
           #img_all{
-          	width: 100vw;
+          	width: calc(100vw - 17px);
           }
 
           #manu_1{
@@ -73,7 +78,7 @@
 
           #manu_6{
           	position: absolute;
-          	top: 270vw;
+          	top: calc(270vw - 45.9px);
           	left: 31vw;
           }
 
@@ -256,6 +261,18 @@
           	left: 30vw;
           }
 
+		  .navbar_item_1{
+			position: absolute;
+			top: 10vw;
+			left: 0;
+		  }
+
+		  .navbar_item_2{
+			position: absolute;
+			top: 14vw;
+			left: 0;
+		  }
+
     
           
 
@@ -332,8 +349,13 @@
       	</div>
 
       	<div id="navbar">
+<<<<<<< HEAD
       		<div><a href="#menu">菜單</a></div>
       		<div><a href="#phone">聯絡我們</a></div>
+=======
+			<div class="navbar_item_1"><a href="#menu">菜單</a></div>
+			<div class="navbar_item_2"><a href="#phone">聯絡我們</a></div>
+>>>>>>> cb12fb507c475f8f5740e7e9b33c6c87c87793bd
       	</div>
 
 
